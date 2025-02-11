@@ -1,16 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const fadeInElements = document.querySelectorAll(".fade-in");
+document.addEventListener("DOMContentLoaded", function() {
+    var divElement = document.getElementById('viz1739290248904');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.maxWidth = '900px';
+    vizElement.style.height = '600px';
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = "translateY(0)";
-            }
-        });
-    }, { threshold: 0.3 });
-
-    fadeInElements.forEach(element => {
-        observer.observe(element);
-    });
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
 });
