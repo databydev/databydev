@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data by Dev</title>
+    <title>Dev's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -16,19 +18,25 @@
         </ul>
     </nav>
 
+    <!-- Hero Section -->
     <header>
-        <h1>Hi, I'm Dev 👋</h1>
-        <p>Data Scientist | Machine Learning Enthusiast | Problem Solver</p>
+        <div class="hero-text">
+            <h1>Hi, I'm Dev 👋</h1>
+            <p>Data Scientist | Machine Learning Enthusiast | Problem Solver</p>
+        </div>
+        <div class="hero-image">
+            <img src="profile.jpg" alt="Dev's Photo">
+        </div>
     </header>
 
-    <!-- About Section with Profile Picture -->
-    <section id="about" class="fade-in">
+    <!-- About Section -->
+    <section id="about">
         <h2>About Me</h2>
-        <img src="Profile_Picc.jpg" alt="Your Profile Picture" class="profile-pic">
         <p>I'm passionate about leveraging data to drive insights...</p>
     </section>
 
-    <section id="skills" class="fade-in">
+    <!-- Skills Section -->
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li>Python (Pandas, NumPy, Scikit-learn)</li>
@@ -37,34 +45,54 @@
         </ul>
     </section>
 
-    <section id="projects" class="fade-in">
+    <!-- Projects Section -->
+    <section id="projects">
         <h2>Projects</h2>
 
-        <!-- Existing Project -->
         <div class="project">
             <h3>Predictive Model for XYZ</h3>
             <p>Built a predictive model that increased accuracy by 20%...</p>
             <a href="#">View Project</a>
         </div>
 
-        <!-- Tableau Project -->
         <div class="project">
-            <h3>Tableau Dashboard: Sales Insights</h3>
-            <p>Interactive Tableau dashboard analyzing sales trends over time.</p>
-            <iframe src="https://public.tableau.com/views/YOUR-DASHBOARD-LINK?:showVizHome=no&:embed=true" width="600" height="450"></iframe>
-            <a href="https://public.tableau.com/views/YOUR-DASHBOARD-LINK" target="_blank">View Full Dashboard</a>
+            <h3>Tableau Dashboard: Trends in Residential Complex Prices in Malaysia</h3>
+            <p>Interactive Tableau dashboard analyzing price trends across different residential complexes.</p>
+
+            <!-- Tableau Embed -->
+            <div class='tableauPlaceholder' id='viz1739290248904'>
+                <noscript>
+                    <a href="#"><img alt='Tableau Dashboard' src='https://public.tableau.com/static/images/Re/ResidentialComplexStoryboard/Story1/1_rss.png' /></a>
+                </noscript>
+                <object class='tableauViz'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='ResidentialComplexStoryboard/Story1' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https://public.tableau.com/static/images/Re/ResidentialComplexStoryboard/Story1/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+
+            <p><a href="https://public.tableau.com/views/ResidentialComplexStoryboard/Story1" target="_blank">🔗 View Full Dashboard</a></p>
         </div>
     </section>
 
-    <section id="contact" class="fade-in">
+    <!-- Contact Section -->
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-        <p>GitHub: <a href="https://github.com/databydev">databydev</a></p>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="#">github.com/databydev</a></p>
     </section>
-
-    <footer>
-        <p>© 2025 Data by Dev</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
