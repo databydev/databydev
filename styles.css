@@ -1,69 +1,108 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f9f9f9;
+    background: #f4f4f4;
+    color: #333;
 }
 
-header {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-section {
-    width: 80%;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.project-card {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #007bff;
+/* Navbar */
+.navbar {
+    background: #333;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Tableau Section Styling */
-#tableau-section {
+    padding: 15px 0;
+    position: fixed;
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 0;
-    text-align: center;
+    top: 0;
+    z-index: 1000;
 }
 
-.tableau-container {
-    width: 90%;
-    max-width: 1000px;
-    height: 500px;
-    margin: 0 auto;
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevents any overflowing content */
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+/* Sections */
+.content-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Project Cards */
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tableau Section */
+#tableau {
+    text-align: center;
+}
+
+.tableauPlaceholder {
+    width: 80%;
+    max-width: 900px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Contact Form */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+form input, form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
