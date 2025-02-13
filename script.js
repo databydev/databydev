@@ -3,7 +3,7 @@ window.onload = function() {
     var vizElement = document.createElement("object");
 
     vizElement.setAttribute("class", "tableauViz");
-    vizElement.setAttribute("style", "width:100%; height:85vh;");
+    vizElement.setAttribute("style", "width:100%; height:100%;");
     vizElement.setAttribute("data-tabs", "no");
 
     // Set up Tableau parameters
