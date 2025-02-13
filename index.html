@@ -4,65 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">Dev's Portfolio</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="dark-mode-toggle">🌙</button></li>
-            </ul>
+    <div class="overlay">
+        <div class="sections">
+            <div class="section" id="about-box" onclick="scrollToSection('about')">About Me</div>
+            <div class="section" id="projects-box" onclick="scrollToSection('projects')">Projects</div>
+            <div class="section" id="contact-box" onclick="scrollToSection('contact')">Contact Me</div>
         </div>
-    </nav>
-    <header class="hero">
-        <div class="container">
-            <img src="profile.jpg" alt="Dev's Profile Picture" class="profile-pic">
-            <h1>Hi, I'm Dev 👋</h1>
-            <p>Data Scientist | Machine Learning Enthusiast | Problem Solver</p>
-        </div>
-    </header>
-    <section id="about" class="content-section">
-        <div class="container">
+    </div>
+
+    <div class="content">
+        <section id="about">
             <h2>About Me</h2>
-            <p>I'm passionate about leveraging data to drive insights...</p>
-        </div>
-    </section>
-    <section id="projects" class="content-section">
-        <div class="container">
+            <p>I am a medical professional with a passion for data science and healthcare analytics...</p>
+        </section>
+        
+        <section id="projects">
             <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Predictive Model for XYZ</h3>
-                <p>Built a predictive model that increased accuracy by 20%...</p>
-            </div>
-            <div class="project-card">
-                <h3>Tableau Dashboard: Sales Insights</h3>
-                <p>Interactive Tableau dashboard visualizing key sales metrics...</p>
-            </div>
-        </div>
-    </section>
-    <section id="tableau" class="content-section">
-        <div class="container">
-            <h2>Trends in Residential Complex Prices in Malaysia</h2>
-            <div class='tableauPlaceholder' id='vizContainer'>
-                <iframe src="https://public.tableau.com/views/YourDashboardHere" width="100%" height="500px" style="border: none;"></iframe>
-            </div>
-        </div>
-    </section>
-    <footer id="contact" class="footer">
-        <div class="container">
+            <p>Details about my data science and machine learning projects...</p>
+        </section>
+
+        <section id="contact">
             <h2>Contact Me</h2>
-            <form>
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </footer>
+            <p>Email: dev.ananthraj95@gmail.com</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
