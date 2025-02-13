@@ -3,61 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
 
     <header>
         <h1>Hi, I'm Dev 👋</h1>
         <p>Data Scientist | Machine Learning Enthusiast | Problem Solver</p>
-        <img src="profile.jpg" alt="Dev's Photo" class="profile-pic">
     </header>
 
-    <section class="container">
-        <div class="card" id="about">
-            <h2>About Me</h2>
-            <p>I'm passionate about leveraging data to drive insights...</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm passionate about leveraging data to drive insights...</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Predictive Model for XYZ</h3>
+            <p>Built a predictive model that increased accuracy by 20%...</p>
+            <button>View Project</button>
         </div>
 
-        <div class="card">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python (Pandas, NumPy, Scikit-learn)</li>
-                <li>Machine Learning & AI</li>
-                <li>SQL & Data Visualization</li>
-            </ul>
-        </div>
-
-        <div class="card" id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Predictive Model for XYZ</h3>
-                <p>Built a predictive model that increased accuracy by 20%...</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-
-            <div class="project">
-                <h3>Tableau Dashboard: Sales Insights</h3>
-                <p>Interactive Tableau dashboard visualizing key sales metrics...</p>
-            </div>
+        <div class="project-card">
+            <h3>Tableau Dashboard: Sales Insights</h3>
+            <p>Interactive Tableau dashboard visualizing key sales metrics...</p>
         </div>
     </section>
 
-    <!-- Tableau Embed (Full Page) -->
-    <section class="tableau-container">
+    <!-- Tableau Section -->
+    <section id="tableau-section">
         <h2>Trends in Residential Complex Prices in Malaysia</h2>
-        <div class='tableauPlaceholder' id='vizContainer'></div>
+        <div id="vizContainer" class="tableau-container"></div>
     </section>
+
+    <script src="script.js"></script>
 
     <!-- Contact Me Section -->
     <footer class="contact" id="contact">
