@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
-    background: url('assets/images/profile.jpg') no-repeat center center fixed;
+    background: url('profile.jpg') no-repeat center center fixed;
     background-size: cover;
     color: white;
     display: flex;
@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 
 /* Dark overlay to enhance text visibility */
 .overlay {
