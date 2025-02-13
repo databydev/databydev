@@ -106,3 +106,22 @@ button {
     padding: 50px;
 }
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.project-box {
+    width: 200px;
+    height: 200px;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
