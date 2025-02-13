@@ -3,106 +3,81 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
-}
-
-/* Navbar */
-.navbar {
-    background: #333;
-    color: white;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    transition: background 0.3s ease;
 }
 
 .container {
     width: 80%;
     margin: auto;
-    max-width: 1100px;
+    text-align: center;
 }
 
-.logo {
-    font-size: 1.5rem;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 10%;
+    color: white;
 }
 
 .nav-links {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: flex-end;
+    gap: 20px;
 }
 
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
+.nav-links li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+}
+
+#dark-mode-toggle {
+    background: #007BFF;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #f4f4f4;
+    padding: 50px 0;
     text-align: center;
-    background: #222;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
     color: white;
 }
 
-/* Sections */
-.content-section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-/* Project Cards */
+/* Projects */
 .project-card {
-    background: white;
+    background: #ffffff;
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Tableau Section */
-#tableau {
-    text-align: center;
-}
-
-.tableauPlaceholder {
-    width: 80%;
-    max-width: 900px;
-    height: 600px;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Contact Form */
-.footer {
+.dark-mode .project-card {
     background: #333;
-    color: white;
-    text-align: center;
-    padding: 40px 0;
 }
 
-form input, form textarea {
-    width: 80%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-
-button {
-    background: #007bff;
+/* Footer */
+.footer {
+    background: #222;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+    padding: 20px 0;
 }
