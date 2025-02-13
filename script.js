@@ -3,7 +3,7 @@ window.onload = function() {
     var vizElement = document.createElement("object");
 
     vizElement.setAttribute("class", "tableauViz");
-    vizElement.setAttribute("style", "width: 100%; max-width: 1000px; height: 500px; border: none;");
+    vizElement.setAttribute("style", "width: 500%; max-width: 5000px; height: 5000px; border: none;");
     vizElement.setAttribute("data-tabs", "no");
 
     vizElement.innerHTML = `
