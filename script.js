@@ -1,27 +1,20 @@
-window.onload = function() {
-    var divElement = document.getElementById('vizContainer');
-    var vizElement = document.createElement("object");
+// Dark Mode Toggle
+document.getElementById('dark-mode-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+});
 
-    vizElement.setAttribute("class", "tableauViz");
-    vizElement.setAttribute("style", "width: 500%; max-width: 5000px; height: 5000px; border: none;");
-    vizElement.setAttribute("data-tabs", "no");
+// Embed Tableau Dashboard
+function loadTableau() {
+    let container = document.getElementById('vizContainer');
+    let url = "YOUR_TABLEAU_EMBED_URL_HERE"; // Replace with your Tableau link
 
-    vizElement.innerHTML = `
-        <param name="host_url" value="https://public.tableau.com/">
-        <param name="embed_code_version" value="3">
-        <param name="site_root" value="">
-        <param name="name" value="ResidentialComplexStoryboard/Story1">
-        <param name="tabs" value="no">
-        <param name="toolbar" value="yes">
-        <param name="animate_transition" value="yes">
-        <param name="display_spinner" value="yes">
-        <param name="display_overlay" value="yes">
-        <param name="display_count" value="yes">
-    `;
+    let options = {
+        width: "100%",
+        height: "600px"
+    };
 
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    let viz = new tableau.Viz(container, url, options);
+}
 
-    divElement.appendChild(vizElement);
-    divElement.appendChild(scriptElement);
-};
+// Load Tableau on page load
+window.onload = loadTableau;
